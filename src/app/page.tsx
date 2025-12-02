@@ -3,6 +3,7 @@ import {
   TrendingUp, GraduationCap, Award, Code2, Activity 
 } from 'lucide-react';
 import { ProjectCarousel } from '@/app/components/ProjectCarousel';
+import { SystemMonitor } from '@/app/components/SystemMonitor';
 
 export default function Portfolio() {
   return (
@@ -12,7 +13,7 @@ export default function Portfolio() {
           <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-blue-600 blur-3xl"></div>
           <div className="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-purple-600 blur-3xl"></div>
         </div>
-
+        
         <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-32">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/30 border border-blue-700/50 text-blue-300 text-sm font-medium">
@@ -74,6 +75,11 @@ export default function Portfolio() {
         </div>
 
         <ProjectCarousel /> 
+
+
+        <SystemMonitor/>
+
+
         <section>
           <div className="mb-10">
             <h3 className="text-2xl font-bold text-slate-900">Domínios de Especialização</h3>
@@ -218,7 +224,6 @@ export default function Portfolio() {
 
               <div className="relative pl-8 group">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 bg-white border-2 border-slate-300 rounded-full group-hover:bg-slate-400 transition-colors"></div>
-                
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
                   <h4 className="text-lg font-bold text-slate-700">Técnico em Informática</h4>
                   <span className="text-xs font-medium text-slate-400">2014 - 2017</span>
@@ -228,7 +233,6 @@ export default function Portfolio() {
                   Programação, Redes de Computadores e Banco de Dados.
                 </p>
               </div>
-
             </div>
           </div>
 
@@ -252,7 +256,6 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-
               <div className="p-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 transition-all group">
                 <div className="flex justify-between items-start">
                   <div>
