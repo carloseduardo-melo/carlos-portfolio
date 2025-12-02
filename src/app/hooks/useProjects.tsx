@@ -5,7 +5,7 @@ import {
   Database, 
 } from 'lucide-react';
 
-import { Project } from '../types/Project';
+import { Project } from '@/app/types/Project';
 
 
 export function useProjects() {
